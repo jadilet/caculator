@@ -100,7 +100,7 @@ func worker(jobs <-chan string, results chan<- string, wg *sync.WaitGroup) {
 func main() {
 
 	if len(os.Args) < 2 {
-		log.Fatal("provide input file path")
+		log.Fatal("provide input file path as argument")
 	}
 
 	f, err := os.Open(os.Args[1])
